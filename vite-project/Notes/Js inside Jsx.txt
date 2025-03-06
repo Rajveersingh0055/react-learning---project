@@ -1,0 +1,126 @@
+import { useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import Entery from './components/Entery'
+
+function App() {
+ 
+ const firstname = 'Joe'
+ const lastname = "Schmoe"
+  return (
+  
+    //  travel()
+    <>
+<h1>Hello {firstname} {lastname}</h1>
+    </>
+  )
+}
+ function travel (){
+  <> 
+     <Header />
+     <Entery/></>
+    
+ }
+export default App
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import Entery from './components/Entery'
+
+function App() {
+  
+  const hours =new Date().getHours()
+  let timeOfDay
+
+  if (hours < 12) {
+    timeOfDay = 'morning'
+  }else if(hours >=12 && hours <17){
+    timeOfDay = 'afternoon'
+}else if( hours <20){
+  timeOfDay = 'evening'
+}else{
+  timeOfDay = 'night'
+}
+
+  return (
+    <> <h1> Good {timeOfDay}</h1>
+    </>
+  )
+}
+ 
+export default App
+
+
+
+//pops 
+
+
+
+import React from 'react'
+
+function App() {
+  return (
+    <div className="contacts flex justify-center flex-wrap gap-10">
+      <article className="contact-card  flex flex-col p-4 pb-5 bg-white shadow-md rounded-lg w-[225px]">
+        <img
+          src="../src/assets/mr-whiskerson.png"
+          alt="Photo of Mr. Whiskerson"
+        />
+        <h3 className="font-bold text-lg mt-2">Mr. Whiskerson</h3>
+        <div className="info-group flex items-center mt-2 ">
+          <img src="../src/assets/phone-icon.png" alt="phone icon" />
+          <p className="text-xs text-gray-800 m-0">(212) 555-1234</p>
+        </div>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/mail-icon.png" alt="mail icon" />
+          <p className="text-xs text-gray-800 m-0">mr.whiskaz@catnap.meow</p>
+        </div>
+      </article>
+
+      <article className="contact-card  flex flex-col p-4 pb-5 bg-white shadow-md rounded-lg w-[225px]">
+        <img src="../src/assets/fluffykins.png" alt="Photo of Fluffykins" />
+        <h3 className="font-bold text-lg mt-2">Fluffykins</h3>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/phone-icon.png" alt="phone icon" />
+          <p className="text-xs text-gray-800 m-0">(212) 555-2345</p>
+        </div>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/mail-icon.png" alt="mail icon" />
+          <p className="text-xs text-gray-800 m-0">fluff@me.com</p>
+        </div>
+      </article>
+
+      <article className="contact-card  flex flex-col p-4 pb-5 bg-white shadow-md rounded-lg w-[225px]">
+        <img src="../src/assets/felix.png" alt="Photo of Felix" />
+        <h3 className="font-bold text-lg mt-2">Felix</h3>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/phone-icon.png" alt="phone icon" />
+          <p className="text-xs text-gray-800 m-0">(212) 555-4567</p>
+        </div>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/mail-icon.png" alt="mail icon" />
+          <p className="text-xs text-gray-800 m-0">thecat@hotmail.com</p>
+        </div>
+      </article>
+
+      <article className="contact-card  flex flex-col p-4 pb-5 bg-white shadow-md rounded-lg w-[225px]">
+        <img src="../src/assets/pumpkin.png" alt="Photo of Pumpkin" />
+        <h3 className="font-bold text-lg mt-2">Pumpkin</h3>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/phone-icon.png" alt="phone icon" />
+          <p className="text-xs text-gray-800 m-0">(0800) CAT KING</p>
+        </div>
+        <div className="info-group flex items-center mt-2">
+          <img src="../src/assets/mail-icon.png" alt="mail icon" />
+          <p className="text-xs text-gray-800 m-0">pumpkin@scrimba.com</p>
+        </div>
+      </article>
+    </div>
+  );
+}
+
+export default App

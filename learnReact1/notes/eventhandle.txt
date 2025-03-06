@@ -1,0 +1,19 @@
+import React from 'react'
+
+function App() {
+const result=  React.useState()
+   function handleClick(){
+    console.log("I was clicked:")
+   }
+     function handleMouseOver(){
+    console.log("I was hovered:")
+   }
+  return (
+    <div>
+      <img src="https://picsum.photos/640/360" alt='Place iamge from picsum'  onMouseOver={handleMouseOver}/>
+      <button onClick={handleClick} > clicked</button>
+    </div>
+  )
+}
+
+export default App

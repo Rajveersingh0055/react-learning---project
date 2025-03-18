@@ -1,12 +1,14 @@
 import React from 'react'
 import GsapFrom from './pages/GsapFrom'
 import GsapTo from './pages/GsapTo'
+import GsapTimeline from './pages/GsapTimeLine'
 
 function App() {
   return (
     <div>
   {/* //<GsapFrom/> */}
-      <GsapTo/>
+      {/* <GsapTo/> */}
+      <GsapTimeline/>
     </div>
   )
 }
